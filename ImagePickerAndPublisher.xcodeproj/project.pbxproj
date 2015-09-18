@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		199B5A256D21B4ED73D8CACB /* libPods-ImagePickerAndPublisher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC83386005287B6E831A4D89 /* libPods-ImagePickerAndPublisher.a */; };
 		922A8CAC1BAB5C7100AA7065 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 922A8CAB1BAB5C7100AA7065 /* main.m */; };
 		922A8CAF1BAB5C7100AA7065 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 922A8CAE1BAB5C7100AA7065 /* AppDelegate.m */; };
 		922A8CB21BAB5C7100AA7065 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922A8CB11BAB5C7100AA7065 /* ViewController.m */; };
 		922A8CB51BAB5C7100AA7065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 922A8CB31BAB5C7100AA7065 /* Main.storyboard */; };
 		922A8CB71BAB5C7100AA7065 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 922A8CB61BAB5C7100AA7065 /* Assets.xcassets */; };
 		922A8CBA1BAB5C7100AA7065 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 922A8CB81BAB5C7100AA7065 /* LaunchScreen.storyboard */; };
+		92820BDF1BABF3E5002C8068 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92820BDE1BABF3E5002C8068 /* Configuration.plist */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E509AB3E9637DDF76896FC9 /* Pods-ImagePickerAndPublisher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePickerAndPublisher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImagePickerAndPublisher/Pods-ImagePickerAndPublisher.debug.xcconfig"; sourceTree = "<group>"; };
+		782B6A758A72693BC22FDA3B /* Pods-ImagePickerAndPublisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePickerAndPublisher.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImagePickerAndPublisher/Pods-ImagePickerAndPublisher.release.xcconfig"; sourceTree = "<group>"; };
 		922A8CA71BAB5C7100AA7065 /* ImagePickerAndPublisher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePickerAndPublisher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		922A8CAB1BAB5C7100AA7065 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		922A8CAD1BAB5C7100AA7065 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		922A8CB61BAB5C7100AA7065 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		922A8CB91BAB5C7100AA7065 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		922A8CBB1BAB5C7100AA7065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92820BDE1BABF3E5002C8068 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		FC83386005287B6E831A4D89 /* libPods-ImagePickerAndPublisher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImagePickerAndPublisher.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				199B5A256D21B4ED73D8CACB /* libPods-ImagePickerAndPublisher.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F181C8D965C443D0E0F39A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E509AB3E9637DDF76896FC9 /* Pods-ImagePickerAndPublisher.debug.xcconfig */,
+				782B6A758A72693BC22FDA3B /* Pods-ImagePickerAndPublisher.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		747F90E821F72D1560D86D3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC83386005287B6E831A4D89 /* libPods-ImagePickerAndPublisher.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		922A8C9E1BAB5C7100AA7065 = {
 			isa = PBXGroup;
 			children = (
 				922A8CA91BAB5C7100AA7065 /* ImagePickerAndPublisher */,
 				922A8CA81BAB5C7100AA7065 /* Products */,
+				2F181C8D965C443D0E0F39A3 /* Pods */,
+				747F90E821F72D1560D86D3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +93,7 @@
 				922A8CB81BAB5C7100AA7065 /* LaunchScreen.storyboard */,
 				922A8CBB1BAB5C7100AA7065 /* Info.plist */,
 				922A8CAA1BAB5C7100AA7065 /* Supporting Files */,
+				92820BDE1BABF3E5002C8068 /* Configuration.plist */,
 			);
 			path = ImagePickerAndPublisher;
 			sourceTree = "<group>";
@@ -86,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 922A8CBE1BAB5C7100AA7065 /* Build configuration list for PBXNativeTarget "ImagePickerAndPublisher" */;
 			buildPhases = (
+				39D687B5E29FBE5983231F3E /* Check Pods Manifest.lock */,
 				922A8CA31BAB5C7100AA7065 /* Sources */,
 				922A8CA41BAB5C7100AA7065 /* Frameworks */,
 				922A8CA51BAB5C7100AA7065 /* Resources */,
+				2F9063ED46804A084A11F0EB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,12 +166,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				922A8CBA1BAB5C7100AA7065 /* LaunchScreen.storyboard in Resources */,
+				92820BDF1BABF3E5002C8068 /* Configuration.plist in Resources */,
 				922A8CB71BAB5C7100AA7065 /* Assets.xcassets in Resources */,
 				922A8CB51BAB5C7100AA7065 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F9063ED46804A084A11F0EB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImagePickerAndPublisher/Pods-ImagePickerAndPublisher-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39D687B5E29FBE5983231F3E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		922A8CA31BAB5C7100AA7065 /* Sources */ = {
@@ -261,8 +324,10 @@
 		};
 		922A8CBF1BAB5C7100AA7065 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E509AB3E9637DDF76896FC9 /* Pods-ImagePickerAndPublisher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ImagePickerAndPublisher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.aoberoi.ImagePickerAndPublisher;
@@ -272,8 +337,10 @@
 		};
 		922A8CC01BAB5C7100AA7065 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 782B6A758A72693BC22FDA3B /* Pods-ImagePickerAndPublisher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ImagePickerAndPublisher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.aoberoi.ImagePickerAndPublisher;
@@ -300,6 +367,7 @@
 				922A8CC01BAB5C7100AA7065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

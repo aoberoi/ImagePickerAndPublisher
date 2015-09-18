@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +17,55 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXZ-Hl-eOM">
+                                <rect key="frame" x="239" y="28" width="122" height="30"/>
+                                <state key="normal" title="Capture an Image"/>
+                                <connections>
+                                    <action selector="captureStillImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LZx-Gc-aHp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awg-Mt-vGg">
+                                <rect key="frame" x="234" y="66" width="133" height="30"/>
+                                <state key="normal" title="Publish to OpenTok"/>
+                                <connections>
+                                    <action selector="publish:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uy0-Er-Gd0"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="opJ-Ti-rLg">
+                                <rect key="frame" x="28" y="104" width="544" height="408"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="opJ-Ti-rLg" secondAttribute="height" multiplier="4:3" id="3bp-DD-l3l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="opJ-Ti-rLg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" priority="750" constant="8" id="3M1-MB-lQf"/>
+                            <constraint firstItem="opJ-Ti-rLg" firstAttribute="top" secondItem="Awg-Mt-vGg" secondAttribute="bottom" constant="8" id="Agd-ix-aNV"/>
+                            <constraint firstItem="HXZ-Hl-eOM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="BdB-Fu-IMn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="opJ-Ti-rLg" secondAttribute="bottom" priority="750" constant="8" id="ElX-t6-gTA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="opJ-Ti-rLg" secondAttribute="trailing" priority="250" constant="8" id="KWl-CT-lHR"/>
+                            <constraint firstItem="opJ-Ti-rLg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" priority="250" constant="8" id="SCd-xn-Mmj"/>
+                            <constraint firstItem="Awg-Mt-vGg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VFp-L2-nBc"/>
+                            <constraint firstItem="Awg-Mt-vGg" firstAttribute="top" secondItem="HXZ-Hl-eOM" secondAttribute="bottom" constant="8" id="fxm-4j-x9q"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="opJ-Ti-rLg" secondAttribute="trailing" priority="750" constant="8" id="gL2-Uf-XQC"/>
+                            <constraint firstItem="opJ-Ti-rLg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="itL-sh-ZQ5"/>
+                            <constraint firstItem="opJ-Ti-rLg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mnn-x6-Cq8"/>
+                            <constraint firstItem="HXZ-Hl-eOM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vP0-lg-lVW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="itL-sh-ZQ5"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="captureButton" destination="HXZ-Hl-eOM" id="dtd-7H-AqO"/>
+                        <outlet property="publishButton" destination="Awg-Mt-vGg" id="X8H-iM-32O"/>
+                        <outlet property="publisherViewContainer" destination="opJ-Ti-rLg" id="duD-R9-Zzs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <OpenTok/OpenTok.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, OTSessionDelegate, OTPublisherDelegate, OTPublisherKitDelegate>
 
 
 @end
